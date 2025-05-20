@@ -1,0 +1,46 @@
+# 📊 Modelo Estrela para Cenário de Vendas — Power BI
+
+Este projeto implementa um modelo dimensional **Star Schema** com dados simulados para análise de **vendas** no Power BI. Ele foi desenvolvido para demonstrar boas práticas de modelagem de dados, medidas DAX e criação de dashboards interativos.
+
+---
+
+## 🌟 Visão Geral
+
+O modelo segue a arquitetura de *Data Warehouse* baseada em estrela, com uma tabela fato central (`F_Vendas`) e cinco tabelas dimensão:
+
+- `D_Tempo`
+- `D_Cliente`
+- `D_Produto`
+- `D_Vendedor`
+- `D_Regiao`
+
+> Ideal para análises temporais, geográficas, de desempenho de vendas, ticket médio, entre outras.
+
+---
+
+## 🧱 Estrutura do Modelo
+
+![Modelo Estrela](modelo_estrela_vendas.png)
+
+---
+
+## 📁 Estrutura de Arquivos
+
+| Arquivo         | Descrição                           |
+|-----------------|-------------------------------------|
+| `F_Vendas.csv`  | Tabela fato com dados transacionais |
+| `D_Tempo.csv`   | Dimensão de tempo                   |
+| `D_Cliente.csv` | Dimensão de cliente                 |
+| `D_Produto.csv` | Dimensão de produto                 |
+| `D_Vendedor.csv`| Dimensão de vendedor                |
+| `D_Regiao.csv`  | Dimensão de região                  |
+| `modelo_estrela_vendas.png` | Diagrama visual do modelo |
+
+---
+
+## 🚀 Como Usar no Power BI
+
+1. **Abra o Power BI Desktop**
+2. Importe os 6 arquivos `.csv` disponíveis neste repositório
+3. Configure os **relacionamentos** entre as tabelas:
+
